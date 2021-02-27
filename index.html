@@ -1,15 +1,174 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Dreacot">
+        <title>Street Crime | Homepage</title>
 
-<head>
-    <title>Page Title</title>
-</head>
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/starter-template/">
 
-<body>
 
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-</body>
+        <link rel="stylesheet" href="public/assets/css/style.css">
+        <link href='public/assets/fonts/DarkerGrotesque-Light.ttf' rel='stylesheet' type='text/css'>
+    
+    </head>
+  <body>
+    
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="container nav-links collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+
+    <div> 
+        <a class="navbar-brand" href="#x">
+            <img src="public/assets/img/logo.svg"/>
+        </a>
+    </div>
+
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <button class="signup-btn" type="button">SIGN UP</button>
+      </ul>
+  </div>
+</nav> -->
+
+<main role="main" class="container-fuid">
+    <!-- Navbar and Hero Area -->
+    <div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md absolute-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="container nav-links collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+          
+              <div> 
+                  <a class="navbar-brand" href="#x">
+                      <img src="public/assets/img/logo.svg"/>
+                  </a>
+              </div>
+          
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                  </li>
+                  <li>
+                    <button class="signup-btn" type="button">SIGN UP</button>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+
+          <!-- Hero Area -->
+        <section class="hero-area">
+            <div class="hero-content">
+                <!-- <div class="hero-title">
+                    <h1 class="divider divider-center">Affordable Bespoke Website Design</h1>
+                </div>
+                <h6>Make us your partner today</h6> -->
+            </div>
+        </section>
+    </div>
+    
+    <!-- Main body -->
+    <section class="main-body">
+        <!-- Login and user stats area-->
+        <section class="mt-minus25">
+            <div class="container">
+                <div class="col-12 row">
+                <!-- Login Box -->
+                    <div class="col-8">
+                        <div class="container login-box">
+                            <div class="container row first-row">
+                                <h5 class="mr-auto pl-15" class="text">Log In</h5>
+                                <img src="public/assets/img/bullet_holes.svg"/>
+                                <h5 class="ml-auto">New Gangster? <a href="#x">Sign up here.</a></h5>
+                            </div>
+
+                            <div class="container row second-row">
+                                <form class="container row" role="form" method="post" action="contact.php">
+                                    <div class="form-group col">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control input-box" id="email" name="email" placeholder="example@domain.com" value="" required="">
+                                        <p class="text-danger"></p>                
+                                    </div>
+                                    <div class="form-group col">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control input-box" id="password" placeholder="******" name="password" value="" required="">
+                                        <p class="text-danger"></p>                
+                                    </div>
+                    
+                    
+                                    <div class="margin-auto col-2">
+                                        <input id="submit" name="submit" type="submit" value="LOG IN" class="signup-btn disabled">
+                                        <!-- <button class="signup-btn" type="button">LOG IN</button> -->
+                    
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User stats -->
+                    <div class="col-4">
+                        <div class="user-stats">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+
+    
+
+  <!-- <div class="starter-template">
+    <h1>Bootstrap starter template</h1>
+    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+  </div> -->
+
+</main><!-- /.container -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+      
+  </body>
 </html>
