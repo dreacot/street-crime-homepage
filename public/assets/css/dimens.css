@@ -1,0 +1,64 @@
+/* Margins and Paddings */
+
+/* margins */
+
+/* top */
+.mt-20{
+    margin-top: 20px;
+}
+
+.mt-25{
+    margin-top: 25px;
+}
+
+.mt-minus25 {
+    margin-top: -25px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+/* bottom */
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+
+/* paddings */
+
+/* left */
+.pl-0{
+    padding-left: 0px !important;
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+/* right */
+.pr-0{
+    padding-right: 0px !important;
+}
+
+.pr-15 {
+    padding-right: 15px;
+}
+
+
+/* top */
+.pt-20 {
+    padding-top: 20px !important;
+}
+
+.pt-25 {
+    padding-top: 25px !important;
+}
+
+.pt-50 {
+    padding-top: 50px !important;
+}

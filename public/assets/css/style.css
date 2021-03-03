@@ -5,15 +5,26 @@
     --white: #ffffff;
     --white-medium: #BDBDBD;
     --input-box: #19181F;
-}
-
-body {
-    font-family: Darker Grotesque !important;
+    --border: #43414D;
 }
 
 @font-face {
     font-family: Darker Grotesque;
-    src: url(./fonts/DarkerGrotesque-Light.tff);
+    src: url(../fonts/DarkerGrotesque-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto Slab;
+    src: url(../fonts/RobotoSlab-Medium.ttf);
+}
+
+body {
+    font-family: Darker Grotesque !important;
+    background-color: #111;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 .starter-template {
@@ -89,14 +100,21 @@ ul li {
     background-position: center 0;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1500px;
     padding: 0 !important;
     margin: 0 !important;
 }
 
+.login-box .first-row .text {
+    color: var(--white-medium);
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+}
+
 .login-box .first-row h5 {
     color: var(--white);
-
     font-family: Darker Grotesque;
     font-style: normal;
     font-weight: 600;
@@ -196,10 +214,173 @@ label {
     margin-top: 30px;
 }
 
-.pl-15 {
-    padding-left: 15px;
+.quick-stats {
+    background: var(--primary-dark);
+    height: 357px;
 }
 
-.mt-minus25 {
-    margin-top: -25px;
+.gameplay-tips .item{
+    width: 242px;
+    height: 309px;
+    border: 1px solid var(--border);
+}
+
+.gameplay-tips .item:hover{
+    background-color: #1B1720;
+}
+
+.gameplay-tips .item .img {
+    height: 60%;
+}
+
+.gameplay-tips .item .desc {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    height: 72px;
+    letter-spacing: 0.15px;
+
+    color: #FFFFFF;
+}
+
+.gameplay-tips .item .link a{
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    opacity: 0.8;
+    color: var(--primary-medium);
+}
+
+.gameplay-tips .item .link a:hover{
+    text-decoration: none;
+}
+
+.gameplay-tips .title{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0 #BB86FC, 1px -1px 0 #BB86FC, -1px 1px 0 #BB86FC, 1px 1px 0 #BB86FC;
+    /* text-shadow: -1px 0 #BB86FC, 0 1px #BB86FC, 1px 0 #BB86FC, 0 -1px #BB86FC; */
+    -webkit-font-smoothing: antialiased;
+}
+
+.gameplay-tips .sub-title{
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.create-account-box {
+    background: url(../img/join-us-bg1.png);
+    background-color: var(--primary-dark);
+    height: 328px;
+    border-radius: 20px;
+}
+
+.create-account-btn{
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 19px 15px;
+    background: var(--primary-disabled);
+    border-radius: 4px;
+    color: var(--white);
+    border: 0px;
+}
+
+.create-account-box .text{
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 36px;
+    text-shadow: -1px -1px 0 #BB86FC, 1px -1px 0 #BB86FC, -1px 1px 0 #BB86FC, 1px 1px 0 #BB86FC;
+    /* text-shadow: -1px 0 #BB86FC, 0 1px #BB86FC, 1px 0 #BB86FC, 0 -1px #BB86FC; */
+    -webkit-font-smoothing: antialiased;
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.create-account-box .sub-text{
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.form-group .join-us-input-box {
+    background: #FFFFFF;
+    border-radius: 3.5px;
+    color: #121212;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.15px;
+    width: 326px;
+    padding: 0 0 0 15px;
+    margin: 0px;
+}
+
+.footer-left {
+    list-style-type: none;
+    color: var(--white);
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.5px;
+    display: flex;
+    margin-left: 0px !important;
+    padding: 0px;
+}
+
+.footer p{
+    list-style-type: none;
+    color: var(--white);
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.5px;
+    display: flex;
+    float: right;
+}
+
+.line {
+    border-top: 1px solid rgba(242, 242, 242, 0.1);
 }
